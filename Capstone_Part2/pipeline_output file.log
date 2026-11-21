@@ -1,0 +1,25 @@
+2026-11-19 13:30:51,753 - INFO - Step 1 Complete: Raw file loaded. Loaded 48204 rows and 9 columns.
+2026-11-19 13:30:51,755 - INFO - Step 2 Complete: Schema validation successful. All expected columns are present.
+2026-11-19 13:30:51,767 - WARNING - Imputed 48143 missing values in 'holiday' column with 'None'.
+2026-11-19 13:30:51,774 - WARNING - Dropped 10 rows due to extreme temperature outliers (< 100K).
+2026-11-19 13:30:51,834 - WARNING - Dropped 17 duplicate rows from the dataset.
+2026-11-19 13:30:51,836 - INFO - Step 3 Complete: Preprocessing done.
+2026-11-19 13:30:51,911 - INFO - Step 4 Complete: Categorical standardization complete.
+2026-11-19 13:30:51,933 - INFO - Step 5 Complete: 'date_time' successfully parsed. Date range: 2012-10-02 09:00:00 to 2018-09-30 23:00:00.
+2026-11-19 13:30:51,938 - INFO - No 0 Kelvin temperature anomalies detected.
+2026-11-19 13:30:51,940 - WARNING - Detected 1 records with physically implausible rainfall (> 500.0 mm).
+2026-11-19 13:30:51,950 - INFO - Imputed outlier at index 24872 (Month: 7, Original: 9831.3 mm) with monthly median: 0.0 mm
+2026-11-19 13:30:51,958 - INFO - Step 7 Complete: Outliers, 0K, and precipitation anomalies checked and resolved.
+2026-11-19 13:30:51,960 - INFO - --- Validation Summary Post-Imputation ---
+2026-11-19 13:30:51,976 - INFO -                temp       rain_1h
+2026-11-19 13:30:51,979 - INFO - count  48177.000000  48177.000000
+2026-11-19 13:30:51,980 - INFO - mean     281.263364      0.130385
+2026-11-19 13:30:51,981 - INFO - std       12.709895      1.003644
+2026-11-19 13:30:51,983 - INFO - min      243.390000      0.000000
+2026-11-19 13:30:51,984 - INFO - 25%      272.180000      0.000000
+2026-11-19 13:30:51,985 - INFO - 50%      282.460000      0.000000
+2026-11-19 13:30:51,986 - INFO - 75%      291.810000      0.000000
+2026-11-19 13:30:51,988 - INFO - max      310.070000     55.630000
+2026-11-19 13:30:51,990 - INFO - Maximum rainfall value after imputation: 55.63 mm
+2026-11-19 13:30:51,992 - INFO - Minimum temperature value after cleaning: 243.39 Kelvin
+2026-11-19 13:30:51,994 - INFO - Pipeline fully completed successfully. Final DataFrame Shape: (48177, 9)
